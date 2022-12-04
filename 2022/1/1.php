@@ -15,7 +15,13 @@ for($i=0;$i<count($grids);$i++)
     }
 }
 
+rsort($formattedArray);
+
 echo "<pre>";
-print_r(max($formattedArray));
+print_r("p1 ".$formattedArray[0]);
 echo "<pre>";
-die();
+
+echo "<pre>";
+print_r("p1 ".($formattedArray[0]+$formattedArray[1]+$formattedArray[2]));
+echo "<pre>";
+
